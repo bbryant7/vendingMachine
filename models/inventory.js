@@ -2,15 +2,12 @@
 const mongoose = require('mongoose');
 
 const vendingMachine = new mongoose.Schema({
-    // "status": "success",
-    "data": [{
-        id: {type: Number, required: true, unique:true},
-        description: {type: String, required: true},
+        description: {type: String, required: true, unique: true},
         cost: {type: Number, required: true},
         quantity: {type: Number, required: true}
-      }]
+      
 })
 
-const inventory = mongoose.model('inventories', vendingMachine);
+const inventory = mongoose.model('inventory', vendingMachine);
 
 module.exports = inventory;
