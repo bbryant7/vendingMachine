@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json())
 
 
-app.get('/api/customer/items',function(req, res){
+app.get('/',function(req, res){
   vendingMachine.find().then(function(results){
     res.json({inventory: results})
   })
