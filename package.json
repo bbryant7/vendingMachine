@@ -1,0 +1,16 @@
+{
+  "name": "vendingmachine",
+  "version": "1.0.0",
+  "description": "MINIMUM REQUIREMENTS: Add a new item to the machine Get a list of the current items, their costs, and quantities of those items Buy an item",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.10.8"
+  }
+}
